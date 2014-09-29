@@ -1,0 +1,126 @@
+<header>
+
+		<div class="row">
+			
+			<div class="medium-4 columns medium-centered">
+
+				<h4>Knockout Tic Tac Toe</h4>
+				
+			</div>
+
+			
+
+
+		</div>
+
+	</header>
+
+
+	<div class="intro">
+		
+
+	</div><!--end intro-->
+
+
+	<div class="points">
+
+		<div class="row">
+
+			<div class="medium-4 columns">
+
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto quae hic, accusamus aut eos nihil adipisci libero, sint esse a voluptatibus atque amet, harum nostrum unde consequatur placeat. Odio, consequatur?</p>
+				
+
+
+			</div><!--end div-->
+
+			<div class="medium-4 columns">
+
+				<ul>
+					<li><span>Resources Used</span></li>
+					<li></li>
+
+				</ul>
+				
+
+			</div><!--end div-->
+
+			<div class="medium-4 columns">
+
+				<ul>
+					<li><span>Instructions</span></li>
+					<li></li>
+
+				</ul>
+				
+
+			</div><!--end div-->
+			
+
+		</div><!--end row-->
+		
+
+	</div><!--end points-->
+
+
+
+	<div class="game">
+
+		<div class="row">
+
+			<div class="gameboard">
+
+			<div class="medium-6 columns">
+
+				         <div id="table">
+		  <div id="row1">
+		  <div id="d11" class="cell"><a  style="color:red" href="#" ng-click="clickrow('d11')" ng-class="{playing: row1[0].played == 'true'}">{{row1[0].title}}</a></div>  
+		  <div id="d12" class="cell"><a style="color:red" href="#"  ng-click="clickrow('d12')" ng-class="{playing: row1[1].played == 'true'}">{{row1[1].title}}</a></div> 
+		  <div id="d13" class="cell"><a style="color:red" href="#" ng-click="clickrow('d13')" ng-class="{playing: row1[2].played == 'true'}">{{row1[2].title}}</a></div>
+		  </div>
+		  <div id="row2">
+		  <div id="d21" class="cell"><a style="color:blue" href="#" ng-click="clickrow('d21')" ng-class="{playing: row2[0].played == 'true'}">{{row2[0].title}}</a></div>
+		  <div id="d22" class="cell"><a style="color:blue" href="#" ng-click="clickrow('d22')" ng-class="{playing: row2[1].played == 'true'}">{{row2[1].title}}</a></div>
+		  <div id="d23" class="cell"><a style="color:blue" href="#" ng-click="clickrow('d23')" ng-class="{playing: row2[2].played == 'true'}">{{row2[2].title}}</a></div>
+		  </div>
+		  <div id="row3">
+		  <div id="d31" class="cell"><a style="color:green" href="#" ng-click="clickrow('d31')" ng-class="{playing: row3[0].played == 'true'}">{{row3[0].title}}</a></div>
+		  <div id="d32" class="cell"><a style="color:green" href="#" ng-click="clickrow('d32')" ng-class="{playing: row3[1].played == 'true'}">{{row3[1].title}}</a></div>
+		  <div id="d33" class="cell"><a style="color:green" href="#" ng-click="clickrow('d33')" ng-class="{playing: row3[2].played == 'true'}">{{row3[2].title}}</a></div>
+		  </div>
+		  
+		  </div>
+		  <div id="Simple Board">
+			  <div>Winner: {{win}}</div>
+			  <div>Not Winner:{{lost}}</div>
+		  </div>
+		  <div class="clearGame"></div>
+	
+
+	</div><!--end gameboard-->
+		
+		</div><!--end col-->
+
+				<div class="medium-6 columns">
+						
+						<div class="wins">
+
+
+							<h4>Wins</h4>
+							
+
+
+						</div><!--end wins-->
+
+
+				</div><!--end col-->
+
+
+	   </div><!--end row-->
+
+	</div><!--end game-->
+
+
+	<footer>
+		
+	</footer>

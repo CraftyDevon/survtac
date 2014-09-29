@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en" ng-app>
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="assets/css/main.min.css">
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<script src="assets/js/angular.js"></script>
+	<script src="assets/js/controllers/game.js"></script>
+
+	
+
+</head>
+<body ng-controller="simpleGameController">
+
+
+<header>
+
+		<div class="row">
+			
+			<div class="medium-4 columns medium-centered">
+
+				<h4>Knockout Tic Tac Toe</h4>
+				
+			</div>
+
+			
+
+
+		</div>
+
+	</header>
+
+
+	
+
+
+	<div class="points">
+
+		<div class="row">
+
+			<div class="medium-6 columns">
+
+				<p>Hey Steve and Co., thanks for stopping by to take a look at my take on your coding challenge, built out with AngularJS, a pinch of jQuery, Foundation SASS, Gulp, and an abudance of cookies. </p>
+				
+
+
+			</div><!--end div-->
+
+			<div class="medium-6 columns">
+
+				<ul>
+					<li><span>Resources Used</span></li>
+					<li><a href="http://blog.beolle.com/2013/10/simple-angularjs-app-tictactoe-game.html" target="_blank">This</a> tutorial was used as a baseline for checking the values, I've made various modifcations and additions to it's behavior and cleanliness.</li>
+
+				</ul>
+				
+
+			</div><!--end div-->
+
+		
+			
+
+		</div><!--end row-->
+		
+
+	</div><!--end points-->
+
+
+
+	<div class="game">
+
+		<div class="row">
+
+
+			<div class="medium-6 columns">
+
+				     
+			<div class="gameboard">
+
+			   <h4>Current Player {{player}}</h4>
+
+					
+					    <div id="table">
+		  <div id="row1">
+		  <div id="d11" class="cell"><a  class="cellLink  " href="#" ng-click="clickrow('d11')" ng-class="{playing: row1[0].played == 'true'}">{{row1[0].title}}</a></div>  
+		  <div id="d12" class="cell"><a class="cellLink  " href="#"  ng-click="clickrow('d12')" ng-class="{playing: row1[1].played == 'true'}">{{row1[1].title}}</a></div> 
+		  <div id="d13" class="cell"><a class="cellLink  " href="#" ng-click="clickrow('d13')" ng-class="{playing: row1[2].played == 'true'}">{{row1[2].title}}</a></div>
+		  </div>
+		  <div id="row2">
+		  <div id="d21" class="cell"><a class="cellLink  " href="#" ng-click="clickrow('d21')" ng-class="{playing: row2[0].played == 'true'}">{{row2[0].title}}</a></div>
+		  <div id="d22" class="cell"><a class="cellLink  " href="#" ng-click="clickrow('d22')" ng-class="{playing: row2[1].played == 'true'}">{{row2[1].title}}</a></div>
+		  <div id="d23" class="cell"><a class="cellLink  " href="#" ng-click="clickrow('d23')" ng-class="{playing: row2[2].played == 'true'}">{{row2[2].title}}</a></div>
+		  </div>
+		  <div id="row3">
+		  <div id="d31" class="cell"><a class="cellLink  " href="#" ng-click="clickrow('d31')" ng-class="{playing: row3[0].played == 'true'}">{{row3[0].title}}</a></div>
+		  <div id="d32" class="cell"><a class="cellLink  " href="#" ng-click="clickrow('d32')" ng-class="{playing: row3[1].played == 'true'}">{{row3[1].title}}</a></div>
+		  <div id="d33" class="cell"><a class="cellLink  " href="#" ng-click="clickrow('d33')" ng-class="{playing: row3[2].played == 'true'}">{{row3[2].title}}</a></div>
+		  </div>
+		  
+		  </div>
+	
+
+	
+	   
+		  
+
+			</div><!--end gameboard-->
+
+		
+			</div><!--end col-->
+
+				<div class="medium-6 columns">
+						
+						<div class="wins">
+
+
+
+								  <div id="Simple Board">
+
+			  <div><h4>Winner <br /><br /><span>{{win}}</span></h4></div>
+		  </div>
+      <a class="button" onclick="restart()">Reset the Game</a>
+							
+
+
+						</div><!--end wins-->
+
+
+				</div><!--end col-->
+
+
+	   </div><!--end row-->
+
+	</div><!--end game-->
+
+
+
+
+	<script>
+		$('a').click( function(e) {
+  e.preventDefault();
+});
+	</script>
+
+</body>
+</html>
